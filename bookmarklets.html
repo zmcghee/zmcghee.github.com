@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zack's film stuff</title>
+<style type="text/css">
+h2 { margin-top:1.5em; }
+li {
+
+	/*color is up to you, overlay png gives button a gradient*/
+	background: #ccc;
+
+	/*set up the layout just right*/
+	display: inline-block;
+	padding: 5px 10px 6px;
+	position: relative;
+
+	/*style the cursor and text of the button*/
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	cursor: pointer;
+
+	/*add rounded corners in mozilla and webkit*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	/*Add box shadows and a bottom border with rgba colors*/
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+
+}
+</style>
+</head>
+<body>
+<h1>Zack's bookmarklets</h1>
+<h2>Outlook Web Access Light (Webmail)</h2>
+<p>These bookmarklets delete or select, respectively, all of the email messages in a list view. Tested only with Outlook Web Access Light v8.3.</p>
+<p>To use these bookmarklets to quickly delete or select email in bulk from Webmail, drag these links to your bookmarks toolbar.</p>
+<ul>
+<li><a href="javascript:try{document.getElementsByTagName('th')[3].getElementsByTagName('input')[0].click();onClkTb('delete');}catch(err){alert("There was an error trying to delete email.");}">Delete all Webmail on this page</a></li>
+<li><a href="javascript:try{document.getElementsByTagName('th')[3].getElementsByTagName('input')[0].click();}catch(err){alert("There was an error trying to select email.");}">Select all Webmail on this page</a>
+</li>
+</ul>
+</body>
+</html>
